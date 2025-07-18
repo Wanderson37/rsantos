@@ -4,7 +4,7 @@
       <q-toolbar class="bg-grey-3">
         <q-toolbar-title class="text-black text-center">
           <q-avatar>
-            <img src="/public/rsantos_logo.png" alt="Logo" />
+            <img src="/rsantos_logo.png" alt="Logo" />
           </q-avatar>
           RSantos
         </q-toolbar-title>
