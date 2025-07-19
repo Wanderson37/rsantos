@@ -13,6 +13,26 @@ const router = createRouter({
           alias: '',
           component: () => import('@/views/HomeView.vue'),
         },
+        {
+          path: 'quem-somos',
+          component: () => import('@/views/QuemSomosView.vue'),
+        },
+        {
+          path: 'servicos',
+          component: () => import('@/views/ServicosView.vue'),
+        },
+        {
+          path: 'noticias',
+          component: () => import('@/views/NoticiasView.vue'),
+        },
+        {
+          path: 'fale-conosco',
+          component: () => import('@/views/FaleConoscoView.vue'),
+        },
+        {
+          path: 'ultimas-noticias',
+          component: () => import('@/views/UltimasNoticiasView.vue'),
+        },
       ],
     },
   ],
