@@ -26,10 +26,12 @@
   </BaseButton>
   <StartOrMigrateCTA />
   <BussinessStats />
+  <FAQ />
 </template>
 
 <script setup lang="ts">
 import BussinessStats from '@/components/home/BussinessStats.vue'
+import FAQ from '@/components/home/FAQ.vue'
 import StartOrMigrateCTA from '@/components/home/StartOrMigrateCTA.vue'
 import BaseButton from '@/wrappers/BaseButton.vue'
 import { ref } from 'vue'
