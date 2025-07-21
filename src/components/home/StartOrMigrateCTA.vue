@@ -1,14 +1,14 @@
 <template>
   <div class="column items-center justify-center q-mb-lg">
     <div style="width: 60vw">
-      <h3 class="q-mb-md text-bold text-center">
+      <h3 class="q-mb-md text-bold text-center" :class="{ fs30: $q.screen.lt.sm }">
         Quer ter uma contabilidade completa para sua empresa?
       </h3>
       <p class="fs18 text-center">
         Escolha a opção desejada abaixo e deixe que nós cuidamos do resto para você!
       </p>
     </div>
-    <div class="row">
+    <div class="row" :class="{ 'column justify-center text-center': $q.screen.lt.sm }">
       <a target="_blank" href="https://wa.me/5592982895615" class="no-decoration">
         <q-card class="card q-mx-md q-mb-sm" clickable hover style="width: 30vw">
           <q-img src="/empresa-1.jpg"></q-img>
