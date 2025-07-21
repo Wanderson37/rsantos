@@ -1,9 +1,16 @@
 <template>
   <div class="column q-my-lg items-center">
-    <p class="fs48 q-mb-lg text-center" style="width: 40rem">
+    <p
+      class="q-mb-lg text-center"
+      :class="{ fs36: $q.screen.lt.sm, fs48: !$q.screen.lt.sm }"
+      :style="$q.screen.lt.sm ? { width: '26rem' } : { width: '40rem' }"
+    >
       + de <b class="text-secondary">{{ clientesAtendidos }}</b> Clientes Atendidos em todo o Brasil
     </p>
-    <div class="row q-gutter-xl">
+    <div
+      class="row q-gutter-xl"
+      :class="{ 'column q-gutter-x-none text-center ': $q.screen.lt.sm }"
+    >
       <div class="q-px-md" style="border-left: 4px #c9a15b solid">
         <b class="fs30 text-bold">{{ colaboradores }}</b>
         <p class="fs18 q-ma-none text-grey-6">Colaboradores</p>
