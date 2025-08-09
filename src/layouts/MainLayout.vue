@@ -20,22 +20,21 @@
             <span>RSantos</span>
           </div>
         </q-toolbar-title>
-        <Transition name="slideX">
-          <q-tabs
-            v-if="!$q.screen.lt.sm"
-            v-model="tab"
-            class="text-black"
-            active-color="primary"
-            indicator-color="primary"
-          >
-            <q-route-tab name="home" label="Home" to="/home" />
-            <q-route-tab name="quem_somos" label="Quem Somos" to="/quem-somos" />
-            <q-route-tab name="servicos" label="Serviços" to="/servicos" />
-            <q-route-tab name="noticias" label="Notícias" to="/noticias" />
-            <q-route-tab name="fale_conosco" label="Fale Conosco" to="/fale-conosco" />
-            <q-route-tab name="ultimas_noticias" label="Últimas Notícias" to="/ultimas-noticias" />
-          </q-tabs>
-        </Transition>
+
+        <q-tabs
+          v-if="!$q.screen.lt.sm"
+          v-model="tab"
+          class="text-black"
+          active-color="primary"
+          indicator-color="primary"
+        >
+          <q-route-tab name="home" label="Home" to="/home" />
+          <q-route-tab name="quem_somos" label="Quem Somos" to="/quem-somos" />
+          <q-route-tab name="servicos" label="Serviços" to="/servicos" />
+          <q-route-tab name="noticias" label="Notícias" to="/noticias" />
+          <q-route-tab name="fale_conosco" label="Fale Conosco" to="/fale-conosco" />
+          <q-route-tab name="ultimas_noticias" label="Últimas Notícias" to="/ultimas-noticias" />
+        </q-tabs>
       </q-toolbar>
     </q-header>
 
@@ -94,7 +93,7 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <Transition name="slideX"> <router-view /></Transition>
     </q-page-container>
   </q-layout>
 </template>
