@@ -30,7 +30,24 @@
         >
           <q-route-tab name="home" label="Home" to="/home" />
           <q-route-tab name="quem_somos" label="Quem Somos" to="/quem-somos" />
-          <q-route-tab name="servicos" label="Serviços" to="/servicos" />
+          <q-tab name="servicos" label="Serviços">
+            <q-popup-proxy
+              anchor="bottom middle"
+              self="top middle"
+              transition-show="jump-down"
+              transition-hide="jump-up"
+            >
+              <q-list class="bg-white rounded-borders shadow-2" style="min-width: 220px">
+                <q-item clickable v-ripple to="/servicos" v-close-popup>
+                  <q-item-section>Todos os serviços</q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple to="/servicos/nossos-planos" v-close-popup>
+                  <q-item-section>Nossos Planos</q-item-section>
+                </q-item>
+              </q-list>
+            </q-popup-proxy>
+          </q-tab>
           <q-route-tab name="noticias" label="Notícias" to="/noticias" />
           <q-route-tab name="fale_conosco" label="Fale Conosco" to="/fale-conosco" />
         </q-tabs>
@@ -80,13 +97,6 @@
             <q-icon name="contact_mail" />
           </q-item-section>
           <q-item-section>Fale Conosco</q-item-section>
-        </q-item>
-
-        <q-item clickable v-ripple to="/ultimas-noticias" @click="leftDrawerOpen = false">
-          <q-item-section avatar>
-            <q-icon name="newspaper" />
-          </q-item-section>
-          <q-item-section>Últimas Notícias</q-item-section>
         </q-item>
       </q-list>
     </q-drawer>

@@ -22,16 +22,16 @@ const router = createRouter({
           component: () => import('@/views/ServicosView.vue'),
         },
         {
+          path: 'servicos/nossos-planos',
+          component: () => import('@/components/servicos/NossosPlanos.vue'),
+        },
+        {
           path: 'noticias',
           component: () => import('@/views/NoticiasView.vue'),
         },
         {
           path: 'fale-conosco',
           component: () => import('@/views/FaleConoscoView.vue'),
-        },
-        {
-          path: 'ultimas-noticias',
-          component: () => import('@/views/UltimasNoticiasView.vue'),
         },
       ],
     },
