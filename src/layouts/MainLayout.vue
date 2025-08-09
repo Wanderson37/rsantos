@@ -93,7 +93,11 @@
     </q-drawer>
 
     <q-page-container>
-      <Transition name="slideX"> <router-view /></Transition>
+      <router-view v-slot="{ Component }">
+        <Transition name="slideX">
+          <component :is="Component" />
+        </Transition>
+      </router-view>
     </q-page-container>
   </q-layout>
 </template>
