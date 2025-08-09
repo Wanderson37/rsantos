@@ -15,7 +15,7 @@
         <q-toolbar-title class="text-black">
           <div class="row items-center q-gutter-sm">
             <q-avatar>
-              <img src="/rsantos_logo.png" alt="Logo" />
+              <img src="/rsantos-logo.svg" alt="Logo" />
             </q-avatar>
             <span>RSantos</span>
           </div>
@@ -33,7 +33,6 @@
           <q-route-tab name="servicos" label="Serviços" to="/servicos" />
           <q-route-tab name="noticias" label="Notícias" to="/noticias" />
           <q-route-tab name="fale_conosco" label="Fale Conosco" to="/fale-conosco" />
-          <q-route-tab name="ultimas_noticias" label="Últimas Notícias" to="/ultimas-noticias" />
         </q-tabs>
       </q-toolbar>
     </q-header>
