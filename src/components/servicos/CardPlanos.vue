@@ -4,7 +4,7 @@
       <div class="text-h5">Planos</div>
       <BaseButton
         v-if="compareEnabled"
-        outline
+        class="text-grey-1"
         no-caps
         color="primary"
         icon="table_chart"
